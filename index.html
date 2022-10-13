@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Budgeting</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <!-- Header -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+                        <header class="header">
+                            <h1>Budgeting</h1>
+                        </header>                        
+                    </div>
+
+                </div>
+            </div>
+            <!-- Item Add Section -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container item-add-container">
+                        <form>
+                            <div class="form">
+                                <label for="item">Item</label>
+                                <input id="item" class="form-control" name="item" type="text">                        
+                            </div>
+                            <div>
+                                <label for="amount">Amount</label>
+                                <input id="amount" class="form-control" name="amount" type="number">                        
+                            </div>
+                            <div>
+                                <label for="type">Type</label>
+                                <select id="type" class="form-control" name="type">
+                                    <option value="expense" selected>Expense</option>
+                                    <option value="income">Income</option>
+                                </select>                     
+                            </div>
+                            <br>
+                            <div>
+                                <button id="add" class="btn btn-primary" type="submit">Add</button>   
+                                <span class="text-danger"></span>                                       
+                            </div>
+                        </form>                        
+                    </div>
+                </div>
+            </div>
+            <!-- List items -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="item-container">
+                            <div class="expense">
+                                <table class="expense-list">
+                                    <tr class="heading-row">
+                                        <th>Expense</th>    
+                                        <th>Amount</th>                                            
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="border-div"></div>
+                            <div class="income">
+                                <table class="income-list">
+                                    <tr class="heading-row">
+                                        <th>Income</th>    
+                                        <th>Amount</th>                                            
+                                    </tr>                                
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Budget Amount-->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+                        <div class="budget-value">Budget: $<span id="budget">0.00</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./function.js"></script>
+    </body>
+</html>

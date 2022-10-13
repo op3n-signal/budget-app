@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.budget-value {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+body {
+    background: rgb(39, 70, 97);
+    color:rgb(95, 95, 95);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* header */
+.container {
+    background: white;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.item-container {
+    padding: 20px;
+    display: flex;
+}
+
+/* Lists */
+
+.border-div {
+    border-left: solid 1px rgb(237, 237, 237);
+    margin: 0 2px;
+}
+
+.expense-list,
+.income-list {
+    width: 100%;
+}
+
+.heading-row {
+    border-bottom: solid 1px rgb(202, 202, 202);
+}
+
+.item-row {
+    border-bottom: solid 1px rgb(225, 225, 225);
+}
+
+tr {
+    display: flex;
+}
+
+.income, 
+.expense,
+th, 
+td {
+    flex: 1;
+}
+
